@@ -1,0 +1,35 @@
+# Flight Management System
+
+This is a simple Flight Management System built using Python and SQLite.
+
+## Features:
+- Add and manage aircrafts.
+- Add and manage flights.
+- View list of aircrafts and flights.
+- Delete aircrafts and flights.
+
+## Requirements:
+- Python 3.x
+- SQLite (comes pre-installed with Python)
+
+## How to run:
+1. Clone the repository.
+2. Run `flight_management.py` to initialize the database and start the system.
+3. Use the functions in the script to add, view, or delete aircrafts and flights.
+
+## Usage:
+
+```python
+import flight_management
+
+# Example of adding a new aircraft
+flight_management.add_aircraft('ABC123', 'Boeing 737', 180, 'Boeing')
+
+# Example of adding a new flight
+flight_management.add_flight('FL123', 'New York', 'London', '2025-05-01 10:00:00', 1)
+
+# Display all aircrafts
+flight_management.show_aircrafts()
+
+# Display all flights
+flight_management.show_flights()
